@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ahabn\Desktop\New folder\projects\Dedicated_processor\microprocessor.ncd
+OUTFILE=C:\Users\ahabn\Desktop\New folder\projects\Dedicated_processor\microprocessor.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4pq208
+WORKINGDIR=C:\Users\ahabn\Desktop\New folder\projects\Dedicated_processor
+LICENSE=WebPack
+USER_INFO=__0_0_0

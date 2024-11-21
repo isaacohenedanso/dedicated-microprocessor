@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/ahabn/Desktop/New folder/projects/dedicated processor/Dedicated_processor/microprocessor_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="microprocessor" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/microprocessor/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microprocessor/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microprocessor/inpt_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inpt_a[7:0]</obj_property>
+      <obj_property name="ObjectShortName">inpt_a[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microprocessor/inpt_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inpt_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">inpt_b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microprocessor/inpt_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inpt_c[7:0]</obj_property>
+      <obj_property name="ObjectShortName">inpt_c[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microprocessor/outp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">outp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microprocessor/CU/ps" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ps</obj_property>
+      <obj_property name="ObjectShortName">ps</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microprocessor/CU/ns" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ns</obj_property>
+      <obj_property name="ObjectShortName">ns</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,14 @@
+EN mux2 NULL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.vhd" sub00/vhpl04 1729170833
+AR mux2 behavioral "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.vhd" sub00/vhpl05 1729170834
+AR datapath behavioral "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/datapath.vhd" sub00/vhpl09 1729170838
+EN datapath NULL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/datapath.vhd" sub00/vhpl08 1729170837
+EN control_unit NULL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/control_unit.vhd" sub00/vhpl10 1729170839
+AR reg behavioral "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/reg.vhd" sub00/vhpl01 1729170830
+EN microprocessor NULL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.vhd" sub00/vhpl12 1729170841
+AR tristatebuffer behavioral "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/tristatebuffer.vhd" sub00/vhpl07 1729170836
+EN compar NULL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/compar.vhd" sub00/vhpl02 1729170831
+AR microprocessor behavioral "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.vhd" sub00/vhpl13 1729170842
+EN tristatebuffer NULL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/tristatebuffer.vhd" sub00/vhpl06 1729170835
+AR compar behavioral "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/compar.vhd" sub00/vhpl03 1729170832
+EN reg NULL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/reg.vhd" sub00/vhpl00 1729170829
+AR control_unit behavioral "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/control_unit.vhd" sub00/vhpl11 1729170840

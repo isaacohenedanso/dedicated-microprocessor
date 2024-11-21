@@ -1,0 +1,7 @@
+vhdl work "tristatebuffer.vhd"
+vhdl work "reg.vhd"
+vhdl work "mux2.vhd"
+vhdl work "compar.vhd"
+vhdl work "datapath.vhd"
+vhdl work "control_unit.vhd"
+vhdl work "microprocessor.vhd"

@@ -1,0 +1,10 @@
+Command line:
+   microprocessor_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50109
+
+Mon Nov 18 22:00:32 2024
+
+
+ Elaboration Time: 0.125 sec

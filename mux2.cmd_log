@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.syr" 
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.syr" 

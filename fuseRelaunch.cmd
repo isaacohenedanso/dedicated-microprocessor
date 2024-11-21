@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor_isim_beh.exe" -prj "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor_beh.prj" "work.microprocessor" 

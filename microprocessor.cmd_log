@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.syr" 
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.syr" 
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.syr" 
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.syr" 
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.syr" 
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.syr" 
+xst -intstyle ise -ifn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.xst" -ofn "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "microprocessor.ngc" microprocessor.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -t 1 microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf 
+bitgen -intstyle ise -f microprocessor.ut microprocessor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc microprocessor.ucf -p xc3s500e-pq208-4 "microprocessor.ngc" microprocessor.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o microprocessor_map.ncd microprocessor.ngd microprocessor.pcf 
+par -w -intstyle ise -ol high -t 1 microprocessor_map.ncd microprocessor.ncd microprocessor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml microprocessor.twx microprocessor.ncd -o microprocessor.twr microprocessor.pcf -ucf microprocessor.ucf 

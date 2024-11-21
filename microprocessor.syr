@@ -1,0 +1,478 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: microprocessor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "microprocessor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "microprocessor"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-pq208
+
+---- Source Options
+Top Module Name                    : microprocessor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/reg.vhd" in Library work.
+Architecture behavioral of Entity reg is up to date.
+Compiling vhdl file "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/compar.vhd" in Library work.
+Architecture behavioral of Entity compar is up to date.
+Compiling vhdl file "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.vhd" in Library work.
+Architecture behavioral of Entity mux2 is up to date.
+Compiling vhdl file "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/tristatebuffer.vhd" in Library work.
+Architecture behavioral of Entity tristatebuffer is up to date.
+Compiling vhdl file "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/datapath.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+Compiling vhdl file "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/control_unit.vhd" in Library work.
+Entity <control_unit> compiled.
+Entity <control_unit> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.vhd" in Library work.
+Architecture behavioral of Entity microprocessor is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <microprocessor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <control_unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <compar> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tristatebuffer> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <microprocessor> in library <work> (Architecture <behavioral>).
+Entity <microprocessor> analyzed. Unit <microprocessor> generated.
+
+Analyzing Entity <datapath> in library <work> (Architecture <behavioral>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing Entity <reg> in library <work> (Architecture <behavioral>).
+Entity <reg> analyzed. Unit <reg> generated.
+
+Analyzing Entity <compar> in library <work> (Architecture <behavioral>).
+Entity <compar> analyzed. Unit <compar> generated.
+
+Analyzing Entity <mux2> in library <work> (Architecture <behavioral>).
+Entity <mux2> analyzed. Unit <mux2> generated.
+
+Analyzing Entity <tristatebuffer> in library <work> (Architecture <behavioral>).
+Entity <tristatebuffer> analyzed. Unit <tristatebuffer> generated.
+
+Analyzing Entity <control_unit> in library <work> (Architecture <behavioral>).
+Entity <control_unit> analyzed. Unit <control_unit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <control_unit>.
+    Related source file is "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/control_unit.vhd".
+    Found finite state machine <FSM_0> for signal <PS>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st0                                            |
+    | Power Up State     | st0                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <control_unit> synthesized.
+
+
+Synthesizing Unit <reg>.
+    Related source file is "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/reg.vhd".
+    Found 8-bit register for signal <Q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg> synthesized.
+
+
+Synthesizing Unit <compar>.
+    Related source file is "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/compar.vhd".
+    Found 8-bit comparator less for signal <OUTP$cmp_lt0000> created at line 13.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <compar> synthesized.
+
+
+Synthesizing Unit <mux2>.
+    Related source file is "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.vhd".
+Unit <mux2> synthesized.
+
+
+Synthesizing Unit <tristatebuffer>.
+    Related source file is "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/tristatebuffer.vhd".
+Unit <tristatebuffer> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/datapath.vhd".
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <microprocessor>.
+    Related source file is "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.vhd".
+Unit <microprocessor> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 8-bit register                                        : 4
+# Comparators                                          : 2
+ 8-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <CU/PS/FSM> on signal <PS[1:7]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ st0   | 0000001
+ st1   | 0000010
+ st2   | 0000100
+ st3   | 0001000
+ st4   | 0010000
+ st5   | 0100000
+ st6   | 1000000
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 2
+ 8-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <microprocessor> ...
+
+Optimizing unit <reg> ...
+
+Optimizing unit <datapath> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block microprocessor, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : microprocessor.ngr
+Top Level Output File Name         : microprocessor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 55
+#      GND                         : 1
+#      LUT2                        : 19
+#      LUT3                        : 10
+#      LUT4                        : 8
+#      MUXCY                       : 16
+#      VCC                         : 1
+# FlipFlops/Latches                : 39
+#      FDC                         : 6
+#      FDE                         : 32
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 25
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-4 
+
+ Number of Slices:                       30  out of   4656     0%  
+ Number of Slice Flip Flops:             39  out of   9312     0%  
+ Number of 4 input LUTs:                 37  out of   9312     0%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    158    21%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 39    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 7     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.732ns (Maximum Frequency: 211.327MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 5.982ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.732ns (frequency: 211.327MHz)
+  Total number of paths / destination ports: 169 / 46
+-------------------------------------------------------------------------
+Delay:               4.732ns (Levels of Logic = 10)
+  Source:            DP/reg_A/Q_0 (FF)
+  Destination:       CU/PS_FSM_FFd4 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: DP/reg_A/Q_0 to CU/PS_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  DP/reg_A/Q_0 (DP/reg_A/Q_0)
+     LUT2:I0->O            1   0.704   0.000  DP/compar_1/Mcompar_OUTP_cmp_lt0000_lut<0> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<0> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<1> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<2> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<3> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<4> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<5> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<6> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           2   0.459   0.526  DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<7> (DP/compar_1/Mcompar_OUTP_cmp_lt0000_cy<7>)
+     LUT2:I1->O            1   0.704   0.000  CU/PS_FSM_FFd5-In1 (CU/PS_FSM_FFd5-In)
+     FDC:D                     0.308          CU/PS_FSM_FFd5
+    ----------------------------------------
+    Total                      4.732ns (3.584ns logic, 1.148ns route)
+                                       (75.7% logic, 24.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            INPT_A<0> (PAD)
+  Destination:       DP/reg_A/Q_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: INPT_A<0> to DP/reg_A/Q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  INPT_A_0_IBUF (INPT_A_0_IBUF)
+     FDE:D                     0.308          DP/reg_A/Q_0
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 32 / 8
+-------------------------------------------------------------------------
+Offset:              5.982ns (Levels of Logic = 2)
+  Source:            CU/PS_FSM_FFd1 (FF)
+  Destination:       OUTP<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: CU/PS_FSM_FFd1 to OUTP<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.591   0.995  CU/PS_FSM_FFd1 (CU/PS_FSM_FFd1)
+     LUT4:I0->O            1   0.704   0.420  DP/tribuffer_1/OUTP<7>1 (OUTP_7_OBUF)
+     OBUF:I->O                 3.272          OUTP_7_OBUF (OUTP<7>)
+    ----------------------------------------
+    Total                      5.982ns (4.567ns logic, 1.415ns route)
+                                       (76.3% logic, 23.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.88 secs
+ 
+--> 
+
+Total memory usage is 232456 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

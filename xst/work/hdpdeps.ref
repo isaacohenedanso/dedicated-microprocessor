@@ -1,0 +1,50 @@
+V3 27
+FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/compar.vhd" 2024/10/17.12:00:36 P.20131013
+EN work/compar 1729170831 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/compar.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/compar/Behavioral 1729170832 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/compar.vhd" \
+      EN work/compar 1729170831
+FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/control_unit.vhd" 2024/10/17.12:16:14 P.20131013
+EN work/control_unit 1729170839 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/control_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/control_unit/Behavioral 1729170840 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/control_unit.vhd" \
+      EN work/control_unit 1729170839
+FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/datapath.vhd" 2024/10/17.12:03:07 P.20131013
+EN work/datapath 1729170837 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/datapath.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/datapath/Behavioral 1729170838 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/datapath.vhd" \
+      EN work/datapath 1729170837 CP reg CP compar CP mux2 CP tristatebuffer
+FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.vhd" 2024/10/16.12:06:49 P.20131013
+EN work/microprocessor 1729170841 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/microprocessor/Behavioral 1729170842 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/microprocessor.vhd" \
+      EN work/microprocessor 1729170841 CP datapath CP control_unit
+FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.vhd" 2024/10/16.00:23:56 P.20131013
+EN work/mux2 1729170833 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux2/Behavioral 1729170834 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/mux2.vhd" \
+      EN work/mux2 1729170833
+FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/reg.vhd" 2024/10/16.00:22:29 P.20131013
+EN work/reg 1729170829 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/reg.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/reg/Behavioral 1729170830 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/reg.vhd" \
+      EN work/reg 1729170829
+FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/tristatebuffer.vhd" 2024/10/16.00:41:25 P.20131013
+EN work/tristatebuffer 1729170835 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/tristatebuffer.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/tristatebuffer/Behavioral 1729170836 \
+      FL "C:/Users/ahabn/Desktop/New folder/projects/Dedicated_processor/tristatebuffer.vhd" \
+      EN work/tristatebuffer 1729170835
